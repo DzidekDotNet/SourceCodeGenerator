@@ -1,0 +1,29 @@
+{
+  "$schema": "https://pct4.procontel.eu/pct3.telegram.schema.json",
+  "ID": "60",
+  "bytes": 298,
+  "name": "Test 60 telegram",
+  "fields": [
+    {
+      "name": "RawBinary",
+      "fieldType": "Base64Binary",
+      "length": 2,
+      "count": 1,
+      "offset": 22
+    },
+    {
+      "name": "ByteValue",
+      "fieldType": "unsignedByte",
+      "length": 1,
+      "count": 1,
+      "offset": 24
+    },
+    {
+      "name": "Int_1Byte",
+      "length": 1,
+      "count": 1,
+      "offset": 25,
+      "fieldType":"byte"
+    }
+  ]
+}

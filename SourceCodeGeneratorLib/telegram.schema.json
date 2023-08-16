@@ -1,0 +1,70 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://pct4.procontel.eu/pct3.telegram.schema.json",
+    "title": "Telegram definition",
+    "description": "The telegram definition similar to PCT3",
+    "type": "object",
+    "properties": {
+        "ID": {
+            "description": "The unique identifier for a telegram",
+            "type": "string"
+        },
+        "name": {
+            "description": "The name for a telegram",
+            "type": "string"
+        },
+        "comment": {
+            "description": "The comment for a telegram",
+            "type": ["string", "null"]
+        },
+        "bytes": {
+            "description": "The telegram's length",
+            "type": "integer",
+            "minimum": 1
+        },
+        "fields": {
+            "description": "The telegram's fields",
+            "_type": "array",
+            "items": { "$ref": "#/$defs/field" },
+            "minItems": 1,
+            "uniqueItems": true
+        }
+    },
+    "required": [ "ID", "name", "bytes", "fields"],
+    
+    "$defs": {
+        "fieldType": {"enum":  ["Base64Binary", "unsignedByte", "byte"]},
+        "field": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "The name of the field",
+                    "comment": "The name will be used to create class property",
+                    "type": "string"
+                },
+                "fieldType": {
+                    "description": "The type of the field",
+                    "$ref": "#/$defs/fieldType"
+                },
+                "length": {
+                    "description": "The length of the field",
+                    "type": "integer",
+                    "default": 1,
+                    "minimum": 1
+                },
+                "offset": {
+                    "description": "The offset of the field",
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "count": {
+                    "description": "The count of the field",
+                    "type": "integer",
+                    "default": 1,
+                    "minimum": 1
+                }
+            },
+            "required": ["name", "fieldType", "length", "offset", "count"]
+        }
+    }
+}
