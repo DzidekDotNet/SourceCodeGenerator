@@ -26,9 +26,9 @@ namespace SourceCodeGeneratorLib
           {
             var json = jsonText.ToString();
             var jsonObject = JsonDocument.Parse(json);
-                        messages.AppendLine($"Parsed JsonObject: '{jsonObject}'");
-                        //var jsonObject = JObject.Parse(json);
-                        var schemaPath = Path.Combine("telegram.schema.json");
+            messages.AppendLine($"Parsed JsonObject: '{jsonObject}'");
+            //var jsonObject = JObject.Parse(json);
+            var schemaPath = Path.Combine("telegram.schema.json");
             //var schema = JsonSchema.Parse(schemaPath);
             messages.AppendLine($"json: '{json}'");
 
