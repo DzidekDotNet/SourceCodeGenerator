@@ -1,4 +1,5 @@
 {
+  "$schema": "https://pct4.procontel.eu/v1/pct3.telegram.schema.json",
   "ID": 20,
   "Name":  "string"
 }

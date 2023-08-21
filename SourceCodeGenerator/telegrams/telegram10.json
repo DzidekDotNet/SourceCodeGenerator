@@ -1,5 +1,5 @@
 {
-  "$schema": "https://pct4.procontel.eu/pct3.telegram.schema.json",
-  "telegramId": "10",
+  "$schema": "https://pct4.procontel.eu/v1/pct3.telegram.schema.json",
+  "Id": "10",
   "fields": []
 }

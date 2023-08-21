@@ -1,0 +1,15 @@
+{
+  "$schema": "https://pct4.procontel.eu/v1/pct3.telegram.schema.json",
+  "Id": "",
+  "name": "",
+  "bytes": 0,
+  "fields": [
+    {
+      "name": "",
+      "fieldType":"Base64Binary",
+      "length": 1,
+      "offset": 0,
+      "count": 1
+    }
+  ]
+}

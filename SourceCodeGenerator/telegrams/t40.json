@@ -1,0 +1,13 @@
+{
+  "$schema": "https://pct4.procontel.eu/pct3.telegram.schema.json",
+  "Id": "40",
+  "name": "",
+  "bytes": 0,
+  "fields": [{
+    "name": "",
+    "fieldType": "unsignedByte",
+    "length": 1,
+    "offset": 0,
+    "count": 1
+  }]
+}

@@ -1,11 +1,11 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://pct4.procontel.eu/pct3.telegram.schema.json",
+    "$id": "https://pct4.procontel.eu/v1/pct3.telegram.schema.json",
     "title": "Telegram definition",
     "description": "The telegram definition similar to PCT3",
     "type": "object",
     "properties": {
-        "ID": {
+        "Id": {
             "description": "The unique identifier for a telegram",
             "type": "string"
         },
@@ -30,7 +30,7 @@
             "uniqueItems": true
         }
     },
-    "required": [ "ID", "name", "bytes", "fields"],
+    "required": [ "Id", "name", "bytes", "fields"],
     
     "$defs": {
         "fieldType": {"enum":  ["Base64Binary", "unsignedByte", "byte"]},
